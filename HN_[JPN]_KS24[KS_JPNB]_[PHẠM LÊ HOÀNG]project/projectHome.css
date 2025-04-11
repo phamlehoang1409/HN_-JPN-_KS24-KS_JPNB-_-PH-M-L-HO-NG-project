@@ -1,0 +1,401 @@
+
+body {
+    position: relative;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.search-bar input {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.recent-posts {
+    padding: 20px;
+}
+
+.post-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap : wrap;
+}
+
+.post {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: left;
+}
+
+.post img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.post-content {
+    padding: 15px;
+}
+
+.date {
+    color: gray;
+    font-size: 12px;
+}
+
+.category {
+    color: blue;
+    font-size: 14px;
+}
+
+.add-article button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px 0;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.pagination a,
+.pagination span {
+    padding: 8px 12px;
+    text-decoration: none;
+    color: #333;
+    border-radius: 5px;
+}
+
+.pagination a:hover {
+    background-color: #ddd;
+}
+
+.pagination .active {
+    background-color: #ece6ff;
+    color: #6a0dad;
+    font-weight: bold;
+}
+
+.headings {
+    margin-right: 2000px;
+    position: absolute;
+    top: -0px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -1, 4%;
+    margin-left: 10px;
+}
+.main-wrapper {
+    display: flex;
+    width: 100%;
+}
+.nav-panel {
+    width: 200px;
+    background-color: #e6f0fa;
+    padding: 20px;
+    text-align: center;
+    border-right: 1px solid #ccc;
+}
+.nav-panel h1 {
+    color: #1e90ff;
+    font-size: 24px;
+    margin: 0;
+}
+.main-content {
+    display: flex;
+    flex-grow: 1;
+    padding: 20px;
+}
+.info-section {
+    flex: 1;
+    padding: 0 20px;
+    border-right: 1px solid #ccc;
+}
+.info-section:last-child {
+    border-right: none;
+}
+h2 {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+ul li {
+    color: #666;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+ul li:first-child {
+    margin-top: 0;
+}
+.social-footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+    position: relative;
+    width: 100%;
+}
+.social-icon {
+    color: #333;
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #1e90ff;
+}
+.pd1 {
+    opacity: 0.5;
+}
+.buttonhead{
+    position: absolute;
+    right: 100px;
+    top: 20px;
+    border-radius: 3px;
+    display: flex;
+    gap: 20px;
+}
+.btn{
+    width: 80px;
+    height: 30px;
+    background-color: white;
+    border: 1px solid lightcyan;
+    
+}
+.pot{
+    opacity: 0.5;
+}
+header {
+    background-color: #f4f4f4;
+    padding: 10px 20px;
+    text-align: center;
+}
+header h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+header span {
+    margin: 0 10px;
+    color: #666;
+}
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.blog-post {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #fff;
+}
+.blog-post img {
+    width: 100%;
+    height: auto;
+}
+.post-content {
+    padding: 15px;
+}
+.date {
+    display: block;
+    color: #666;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+h2 {
+    margin: 0 0 10px 0;
+    font-size: 1.2em;
+}
+.category {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #e0e0e0;
+    border-radius: 3px;
+    font-size: 0.9em;
+}
+.category:where([Career]) {
+    background-color: #e6f3fa;
+    color: #1e90ff;
+}
+.category:where([ Thoughts]) {
+    background-color: #f0e6fa;
+    color: #6a0dad;
+}
+.category:where([ Feelings]) {
+    background-color: #faf0e6;
+    color: #ff4500;
+}
+.category:where([ Journal]) {
+    background-color: #e6fae6;
+    color: #228b22;
+}
+.btnFit{
+    width: 600px;
+    height: 100px;
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+  .main2 {
+    display: flex;
+  
+    flex-direction: column;
+    width: 100%;
+    height: 992px;
+    gap: 20px;
+  }
+  .main2 .listTopic {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+  }
+  
+  .main2 .content2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    justify-content: center;
+  
+  }
+  .main2 .content2 .item1 {
+    width: 384px;
+    height: 468px;
+    
+  }
+  .main2 .content2 .line {
+    display: flex;
+    justify-content: space-between;
+  }
+  .main2 .content2 .line img {
+    height: 10px;
+    margin-top: 20px;
+  }
+  .main2 .content2 .item1 button {
+    background-color: rgb(226, 195, 255);
+    color: blueviolet;
+    border: 1px solid rgb(226, 195, 255);
+    border-radius: 5px;
+  }
+  .paginationBar {
+    display: flex;
+    justify-content: space-around;
+  }
+  .paginationBar p {
+    opacity: 0.6;
+  }
+  .paginationBar .numberPage {
+    display: flex;
+    gap: 20px;
+  }
+  .paginationBar .previous {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .paginationBar .next {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .hrSpaceTop {
+   
+    margin-top: 500px;
+   
+  }
+  footer .textFooter {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  footer .textFooter .About {
+    width: 356px;
+    height: 94px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  footer .textFooter .ListLink{
+      display: flex;
+      flex-direction: column;
+      width: 309px;
+      height: 198px;
+      gap: 15px;
+  }
+  
+  footer .textFooter .help{
+      display: flex;
+      flex-direction: column;
+      width: 137px;
+      height: 198px;
+      gap: 15px;
+  }
+  footer .textFooter .Resources{
+      display: flex;
+      flex-direction: column;
+      width: 236px;
+      height: 198px;
+      gap: 15px;
+  }
+  footer a{
+      text-decoration: none;
+      color: black;
+      font-size: smaller;
+  }
+  .iconUnder{
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 50px;
+  }
+  .item1{
+    width: 384px;
+    height: 468px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  .listTopic div {
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.listTopic div:hover {
+    background-color: #e9ecef;
+}
+
+.listTopic div.active {
+    background-color: #007BFF;
+    color: white;
+    border-radius: 4px;
+}
+ 
+  

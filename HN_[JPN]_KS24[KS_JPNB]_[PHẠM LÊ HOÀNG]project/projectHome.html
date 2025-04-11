@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <link rel="stylesheet" href="./projectHome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <div class="search-bar">
+            <input type="text" placeholder="Search for articles">
+        </div>
+        <div class="buttonhead">
+            <button onclick="logOut()" class="btn">LogOut</button>
+        </div>
+    </header>
+    <p class="headings">REKKEI_EDU_BLOG</p>
+    <main>
+        <section class="recent-posts">
+            <h2>Recent blog posts</h2>
+            <div class="post-grid" id="postGrid">
+            </div>
+        </section>
+
+        <div class="add-article">
+            <button onclick="next()" class="btnFit">ADD NEW ARTICLE</button>
+        </div>
+        <div class="main2">
+            <div class="listTopic">
+                <div onclick="filterPostsByCategory('all')" class="topic-item"><b>All blog posts</b></div>
+                <div onclick="filterPostsByCategory('Daily Journal')" class="topic-item">Daily Journal</div>
+                <div onclick="filterPostsByCategory('Work&career')" class="topic-item">Work&career</div>
+                <div onclick="filterPostsByCategory('Personal Thoughts')" class="topic-item">Personal Thoughts</div>
+                <div onclick="filterPostsByCategory('Emotions&Feelings')" class="topic-item">Emotions&Feelings</div>
+            </div>
+            <div class="content2" id="content2">
+            </div>
+        </div>
+        <br><br><br>
+        <hr>
+        <div class="paginationBar">
+            <div class="previous">
+                <button onclick="previousPage()">Previous</button>
+            </div>
+            <div class="numberPage" id="paginationNumbers">
+            </div>
+            <div class="next">
+                <button onclick="nextPage()">Next</button>
+            </div>
+        </div>
+        <div class="hrSpaceTop">
+            <hr>
+        </div>
+
+        <div class="main-wrapper">
+            <div class="nav-panel">
+                <h1>MYBLOG</h1>
+            </div>
+            <div class="main-content">
+                <div class="info-section">
+                    <h2>About</h2>
+                    <ul>
+                        <li>Rareblocks is a amet consectetur adipiscing</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipiscing</li>
+                        <li>Nullam dictum amet justo viverra ipsum nunc</li>
+                        <li>Ridiculus mattis metus sodales involuptat</li>
+                        <li>ullamcorper amet adipiscing elit ipsum</li>
+                    </ul>
+                </div>
+                <div class="info-section">
+                    <h2>Company</h2>
+                    <ul>
+                        <li>About</li>
+                        <li>Features</li>
+                        <li>Works</li>
+                        <li>Career</li>
+                    </ul>
+                </div>
+                <div class="info-section">
+                    <h2>Help</h2>
+                    <ul>
+                        <li>Customer Support</li>
+                        <li>Delivery Details</li>
+                        <li>Terms & Conditions</li>
+                        <li>Privacy Policy</li>
+                    </ul>
+                </div>
+                <div class="info-section">
+                    <h2>Resources</h2>
+                    <ul>
+                        <li>Free eBooks</li>
+                        <li>Development Tutorial</li>
+                        <li>How to - Blog</li>
+                        <li>Youtube Playlist</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="social-footer">
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+        </div>
+    </main>
+
+    <script src="./projectHome.js"></script>
+</body>
+
+</html>
