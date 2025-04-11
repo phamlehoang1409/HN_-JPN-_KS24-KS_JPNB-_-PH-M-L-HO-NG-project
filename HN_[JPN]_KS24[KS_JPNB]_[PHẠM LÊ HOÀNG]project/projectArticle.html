@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý bài viết</title>
+    <link rel="stylesheet" href="./projectArticle.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li>Sidenav item</li>
+                    <li onclick="home()" class="lili">Home</li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <h1>Quản lý bài viết</h1>
+            <div class="add-article">
+                <h2>Thêm bài viết mới</h2>
+                <form id="addArticleForm" >
+                    <input type="text" placeholder="URL ảnh" name="image"><br>
+                    <input type="text" placeholder="Tiêu đề" name="title"><br>
+                    <input type="text" placeholder="Chuyên mục" name="category"><br>
+                    <textarea placeholder="Nội dung" name="content" rows="4"></textarea><br>
+                    <select name="status">
+                        <option value="public">Public</option>
+                        <option value="private">Private</option>
+                    </select><br>
+                    <button type="submit">Thêm</button>
+                </form>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ảnh</th>
+                        <th>Tiêu đề</th>
+                        <th>Chuyên mục</th>
+                        <th>Nội dung</th>
+                        <th>Trạng thái</th>
+                        <th>Hành động</th>
+                    </tr>
+                </thead>
+                <tbody id="postTableBody"></tbody>
+            </table>
+            <div id="pagination"></div> 
+        </main>
+    </div>
+
+    <script src="./projectArticle.js"></script>
+</body>
+</html>
+</script>
