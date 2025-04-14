@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập</title>
+    <link rel="stylesheet" href="./projectLogin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="image-section">
+            <img src="https://s3-alpha-sig.figma.com/img/a6f1/4c1f/a6846f29f11dc2e85f40b29fbcc92d57?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=jb24lYquZEjRmiR-3EzAVHFriJKG~6dQnmdJMTtKWTIY6wHxhm-ymYUhprYdndP2D68JiOoaAcBurGY33ePy5lpF1HQf8zRulSG7XQLiqu7SuIxwhQxC5DYkQfwvfC0xKOHF6y~tpbS6EOah7ZMOn8Mu2IzrkmJsEvAll03GJor~y1SYn14gKAv-dPkkeo5ecJdzNCR67SE2FjKhduFFfYiDlg9KL4f2a0F-v7xckPhh3gi4Ci6iOrFNLbrf0SpHfPddouYghLdnp6lI~3BQrZ8EUmsmDUdTysc3m9K4GsCvUSmiBTIHF8bgnsMl6794lDzuDH9BlOE3K-6mKXjlYw__"
+                alt="Illustration" width="100%">
+        </div>
+        <div class="form-section">
+            <h2>Sign in in with</h2>
+            <div class="social-login">
+                <button><i class="fa-brands fa-facebook"></i></button>
+                <button><i class="fa-brands fa-twitter"></i></button>
+                <button><i class="fa-brands fa-invision"></i></button>
+            </div>
+            <p>Or</p>
+            <div class="input-group">
+                <label>Email address</label>
+                <input id="email" type="email" placeholder="Enter a valid email address">
+            </div>
+            <div class="input-group">
+                <label>Password</label>
+                <input id="password" type="password" placeholder="Enter password">
+            </div>
+            <button class="login-btn" onclick="login()">Login</button>
+            <div class="Don">Don't have an account? <a href="#" style="color: red;" onclick="update()">Register</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Copyright © 2025. All rights reserved.</p>
+        <div class="social-icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-google"></i>
+            <i class="fab fa-linkedin"></i>
+        </div>
+    </div>
+    <script src="./projectLogin.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,343 @@
+/* body {
+    margin: 0;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: purple;
+}
+
+.container {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+.left-section {
+    flex: 1;
+    background-color: purple;
+    color: white;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.left-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.left-section p {
+    font-size: 1.2em;
+}
+
+
+.right-section {
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 500px;
+    height: 456px;
+    top: 49px;
+    left: 65px;
+}
+
+
+.right-section input {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+
+.right-section button {
+    background-color: #4a00e0;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+
+.header {
+    width: 595px;
+    height: 116px;
+    top: 47px;
+    left: -132.24px;
+}
+
+
+.sphere {
+    position: absolute;
+    top: 50px;
+    left: 600px;
+    width: 220px;
+    height: 220px;
+    background: radial-gradient(circle at center, #a000c8, #2d033b);
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(160, 0, 200, 0.8);
+}
+
+.sphere1 {
+    margin-left: 30px;
+    margin-top: 450px;
+    width: 400px;
+    height: 220px;
+    background: radial-gradient(circle at center, #a000c8, #2d033b);
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(160, 0, 200, 0.8);
+    transform: skew(-15deg, 0deg);
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-section,
+    .right-section {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .left-section h1 {
+        font-size: 1.8em;
+    }
+
+    .right-section {
+        width: 100%;
+        height: auto;
+    }
+
+    .sphere {
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 150px;
+        height: 150px;
+    }
+
+    .sphere1 {
+        width: 300px;
+        height: 170px;
+        margin-left: 0;
+        margin-top: 300px;
+    }
+
+    .right-section input,
+    .right-section button {
+        width: 100%;
+    }
+
+    .header {
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+} */
+
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: purple;
+}
+
+.container {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+.left-section {
+    flex: 1;
+    background-color: purple;
+    color: white;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.left-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.left-section p {
+    font-size: 1.2em;
+}
+
+.right-section {
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 500px;
+    height: 456px;
+    top: 49px;
+    left: 65px;
+}
+
+.right-section input {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.right-section button {
+    background-color: #4a00e0;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+.header {
+    width: 595px;
+    height: 116px;
+    top: 47px;
+    left: -132.24px;
+}
+
+.sphere {
+    position: absolute;
+    top: 50px;
+    left: 600px;
+    width: 220px;
+    height: 220px;
+    background: radial-gradient(circle at center, #a000c8, #2d033b);
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(160, 0, 200, 0.8);
+}
+
+.sphere1 {
+    margin-left: 30px;
+    margin-top: 450px;
+    width: 400px;
+    height: 220px;
+    background: radial-gradient(circle at center, #a000c8, #2d033b);
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(160, 0, 200, 0.8);
+    transform: skew(-15deg, 0deg);
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-section,
+    .right-section {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .left-section h1 {
+        font-size: 1.8em;
+    }
+
+    .right-section {
+        width: 100%;
+        height: auto;
+    }
+
+    .sphere {
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 150px;
+        height: 150px;
+    }
+
+    .sphere1 {
+        width: 300px;
+        height: 170px;
+        margin-left: 0;
+        margin-top: 300px;
+    }
+
+    .right-section input,
+    .right-section button {
+        width: 100%;
+    }
+
+    .header {
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+}
+
+
+#snackbar {
+    visibility: hidden; /* Ẩn mặc định */
+    min-width: 250px; /* Chiều rộng tối thiểu */
+    margin-left: -125px; /* Trung tâm snackbar */
+    background-color: #333; /* Màu nền */
+    color: #fff; /* Màu chữ */
+    text-align: center; /* Căn giữa chữ */
+    border-radius: 4px; /* Bo góc */
+    padding: 16px; /* Padding */
+    position: fixed; /* Định vị cố định */
+    z-index: 1000; /* Đảm bảo snackbar hiển thị trên cùng */
+    left: 50%; /* Căn giữa theo chiều ngang */
+    bottom: 30px; /* Khoảng cách từ dưới cùng */
+    font-size: 17px; /* Kích thước chữ */
+}
+
+#snackbar.show {
+    visibility: visible; 
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
